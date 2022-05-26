@@ -44,7 +44,6 @@ export default function Profile() {
     localStorage.removeItem('token');
     await router.push('/');
     await axios.post(`${apiUrl}/auth/logout`, {});
-    await router.push('/');
   };
 
   const getToken = async () => {
